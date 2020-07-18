@@ -1,0 +1,14 @@
+{
+	"properties": [
+		{
+			"name": "multitenancy.gintran.data-sources",
+			"type": "java.lang.String[]",
+			"description": "Lista de DataSources multitemancy"
+		},
+		{
+			"name": "multitenancy.gintran.data-sources.tenantId",
+			"type": "java.lang.String",
+			"description": "Identificador Unico do DataSource"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+server:
+  port: 8080
+  compression:    enabled: false
+    
+spring:
+  jpa:
+    database: SYBASE
+    database-platform: org.hibernate.dialect.SybaseDialect
+    generate-ddl: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SybaseDialect 
+        ddl-auto: none
+        format_sql: true
+        show_sql: true   
+        
+multitenancy:
+  gintran:
+    dataSources:
+    
+    - tenantId: '00000000000000'
+      url: jdbc:sybase:Tds:localhost:2640?ServiceName=Gintran002&JCONNECT_VERSION=7
+      username: user
+      password: user
+      driverClassName: com.sybase.jdbc4.jdbc.SybDriver
+
